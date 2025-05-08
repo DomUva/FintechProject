@@ -1,0 +1,17 @@
+{
+  "dependencies": {
+    "express": "^5.1.0",
+    "kafkajs": "^2.2.4",
+    "plaid": "^33.0.0"
+  },
+  "scripts": {
+    "start": "node server.js"
+  },
+  "name": "plaid",
+  "version": "1.0.0",
+  "main": "server.js",
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": ""
+}

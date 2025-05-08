@@ -1,0 +1,19 @@
+KAFKA_CLUSTER_ID="$(bin/kafka-storage.sh random-uuid)"
+bin/kafka-storage.sh format --standalone -t $KAFKA_CLUSTER_ID -c config/server.properties
+bin/kafka-server-start.sh config/server.properties
+
+
+
+bin/kafka-topics.sh --create     --bootstrap-server localhost:9092     --replication-factor 1     --partitions 1     --topic transactions-input
+bin/kafka-topics.sh --create     --bootstrap-server localhost:9092     --replication-factor 1     --partitions 1     --topic transactions-output     --config cleanup.policy=compact
+
+bin/kafka-run-class.sh LocalPurchaseProcessor.java 
+
+
+
+bin/kafka-console-consumer.sh   --topic transactions-output   --bootstrap-server localhost:9092   --property print.key=true   --property key.deserializer=org.apache.kafka.common.serialization.StringDeserializer   --property value.deserializer=org.apache.kafka.common.serialization.StringDeserializer
+#bin/kafka-console-producer.sh --bootstrap-server localhost:9092 --topic transactions-input
+
+
+PURGE 
+rm -rf /tmp/kafka-logs /tmp/kraft-combined-logs
