@@ -1,1 +1,10 @@
+Dom - 
+  Plaid API + interfacing - 100%
+  Paper - 50%
+  Plaid/Kafka Handoff - 50%
 
+
+Connor:
+  Kafka API + interfacing - 100%
+  Paper - 50%
+  Plaid/Kafka Handoff - 50%
