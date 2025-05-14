@@ -1,3 +1,5 @@
+Project Contributions
+
 Dom - 
   Plaid API + interfacing - 100%
   Paper - 50%
