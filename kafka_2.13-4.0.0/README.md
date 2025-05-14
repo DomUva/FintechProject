@@ -2,6 +2,9 @@ Instructins to run code
 
 Steps assume that Kafka and Plaid services have been installed locally or on a server.  
 
+Feel free to  
+``` git clone https://github.com/DomUva/FintechProject.git ```
+
 Below is the directory layout we reference in these instructions:
   ```
   sdp3@sdpTeam3:~/CLOUD/kafka_2.13-4.0.0$ ls
