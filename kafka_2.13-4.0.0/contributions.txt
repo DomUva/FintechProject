@@ -4,16 +4,19 @@ Dom:
   Plaid API + interfacing - 80%
   Paper - 40%
   Plaid/Kafka Handoff - 40%
+  Testing/Measurements - 40%
 
 
 Connor:
   Kafka API + interfacing - 80%
   Paper - 40%
   Plaid/Kafka Handoff - 40%
+  Testing/Measurements - 40%
 
 Manav:
   Plaid API + interfacing - 20%
   Kafka API + interfacing - 20%
   Plaid/Kafka Handoff - 20%
   Paper - 20%
+  Testing/Measurements - 20%
 
