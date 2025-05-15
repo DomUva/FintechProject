@@ -1,5 +1,7 @@
 Instructins to run code
 
+See project at ```https://github.com/DomUva/FintechProject/tree/main/kafka_2.13-4.0.0```
+
 Steps assume that Kafka and Plaid services have been installed locally or on a server.  
 
 Feel free to  
